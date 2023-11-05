@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC News | Create</title>
+</head>
+<body>
+    <div class="header">
+        <a href=""><h1>SINGLE NEWS</h1></a>
+    </div>
+    <P>{{News.headline}}</P>
+  <p><img src="{{News.images.url}}" alt="Images"></p>
+  <p>{{News.content}}</p>
+  <p>{{News.date_reported}}</p>
+  <p>{{News.reporter}}</p>
+
+    <br>   
+</body>
+</html>

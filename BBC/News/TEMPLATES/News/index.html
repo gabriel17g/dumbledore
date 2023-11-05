@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC News| HomePage</title>
+    <style>
+        body {
+            background-color: cyan;
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'store/main.css' %}">
+</head>
+<body>
+    <div class="header">
+       <h1>Welcome to BBC News</h1>
+   <div> 
+    </div class="navigation">
+      <a href="{% url 'News' %}">All News</a>
+      <a href="{% url 'create' %}">Create</a>
+      <a href="{% url 'contact' %}">Contact Us</a>
+    </div>
+    <br> 
+</body>
+</html>

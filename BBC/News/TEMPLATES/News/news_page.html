@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC News | HomePage</title>
+</head>
+<body>
+    <div class="header">
+        <h1>CURRENT NEWS</h1> </div>
+    <div>
+    <p>{% for News in News_list %}</p>
+    <a href="{%url 'single' News.id%}">{{News.headline}}</a>
+    <p>{{News.date_reported}}</p>
+    <br>
+    
+    {% endfor %}
+
+    </p>  
+    </div>    
+</body>
+</html>
